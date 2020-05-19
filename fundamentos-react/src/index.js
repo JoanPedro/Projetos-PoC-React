@@ -1,5 +1,6 @@
 import './index.css';
 import Primeiro from './components/basics/Primeiro';
+import SegundoComParamentro from './components/basics/SegundoComParametro';
 import ReactDOM from 'react-dom';
 import React from 'react';
 
@@ -22,6 +23,11 @@ ReactDOM.render(
     { tag }
     <p />
     < Primeiro />
+    < SegundoComParamentro 
+      titulo = "Segundo Componente"
+      subtitulo = "Com parâmetro"
+      nota = {10}
+    />
   </div>,
   document.getElementById('root'),
 );
