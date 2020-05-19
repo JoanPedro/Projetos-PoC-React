@@ -2,6 +2,7 @@ import React from 'react';
 import './App.css'
 import Primeiro from './components/basics/Primeiro';
 import Familia from './components/basics/Familia';
+import FamiliaMembro from './components/basics/FamiliaMembro';
 import Fragmento from './components/basics/Fragments';
 import SegundoComParametro from './components/basics/SegundoComParametro';
 import Aleatorio from './components/basics/Aleatorio';
@@ -14,12 +15,12 @@ export default _ => {
       <h1>Fundamentos React</h1>
     <div className="Cards">
       <Card titulo="Exercício Componentes com Filhos" >
-        <Familia sobrenomeDaMae="Silva" sobrenomeDoPai="Souza"
-          filho="Arthur" filha="Maria"  
-        />
-        <Familia sobrenomeDaMae="Oliveira" sobrenomeDoPai="de Souza"
-          filho="Joan Pedro" filha="Carla Beatriz"  
-        />
+        <Familia sobrenomeDaMae="Silva" sobrenomeDoPai="Souza">
+          <FamiliaMembro filho="Arthur" filha="Maria"/>  
+        </Familia>
+        <Familia sobrenomeDaMae="Oliveira" sobrenomeDoPai="de Souza">
+          <FamiliaMembro filho="Joan Pedro" filha="Carla Beatriz"/>
+        </Familia>
       </Card>
       <p />
       <Card titulo="Exercício Aleatório" >
