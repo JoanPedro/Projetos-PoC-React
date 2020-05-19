@@ -1,6 +1,7 @@
 import React from 'react';
 import './App.css'
 import Primeiro from './components/basics/Primeiro';
+import Familia from './components/basics/Familia';
 import Fragmento from './components/basics/Fragments';
 import SegundoComParametro from './components/basics/SegundoComParametro';
 import Aleatorio from './components/basics/Aleatorio';
@@ -12,7 +13,15 @@ export default _ => {
     <div className="App">
       <h1>Fundamentos React</h1>
     <div className="Cards">
-      
+      <Card titulo="Exercício Componentes com Filhos" >
+        <Familia sobrenomeDaMae="Silva" sobrenomeDoPai="Souza"
+          filho="Arthur" filha="Maria"  
+        />
+        <Familia sobrenomeDaMae="Oliveira" sobrenomeDoPai="de Souza"
+          filho="Joan Pedro" filha="Carla Beatriz"  
+        />
+      </Card>
+      <p />
       <Card titulo="Exercício Aleatório" >
         < Aleatorio min = { 1000 } max = { 2000 }/>
       </Card>
