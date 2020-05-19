@@ -1,10 +1,7 @@
 import './index.css';
-import Primeiro from './components/basics/Primeiro';
-import Fragmento from './components/basics/Fragments';
-import SegundoComParametro from './components/basics/SegundoComParametro';
 import ReactDOM from 'react-dom';
 import React from 'react';
-
+import App from './App';
 // npx create-react-app <nome da paste que será criada>
 /* Método Render - 
 2 Parâmetros: 
@@ -17,19 +14,8 @@ const el = document.getElementById('root')
 ReactDOM.render('Olá React', el) */
 
 // Método 2: -> String dentro do DOM.
-const tag = <strong>Olá React!!!</strong>;
 
 ReactDOM.render(
-  <div>
-    { tag }
-    <p />
-    < Primeiro />
-    < SegundoComParametro 
-      titulo = "Segundo Componente"
-      subtitulo = "Com parâmetro"
-      nota = {10}
-    />
-    <Fragmento />
-  </div>,
+  < App/>,
   document.getElementById('root'),
 );
