@@ -2,7 +2,10 @@ import React from 'react';
 
 export default (props) => {
   const callBack__Click = props.quandoClicar
-
+  const [min, max] = [50, 70];
+  const gerarIdade = parseInt(Math.random() * (max - min)) + min
+  const gerarNerd= Math.random() > 0.5
+  
   return(
     <div>
       <div>
@@ -10,7 +13,7 @@ export default (props) => {
       </div>
       <button onClick={
         e => {
-          callBack__Click('João', 53, true)
+          callBack__Click('João', gerarIdade, gerarNerd)
         }
       }> 
         Fornecer Informações 
