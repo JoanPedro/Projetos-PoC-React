@@ -13,13 +13,18 @@ import ParOuImpar from './components/condicional/ParOuImpar';
 import UsuarioInfo from './components/condicional/UsarioInfo';
 import ComunicacaoDireta from './components/comunicacao/DiretaPai';
 import ComunicacaoIndireta from './components/comunicacao/IndiretaPai.jsx';
+import Inputs from './components/formulario/Input';
+
 export default _ => {
   const tag = <strong>Olá React!!!</strong>;
   return (
     <div className="App">
       <h1>Fundamentos React</h1>
     <div className="Cards">
-    <Card titulo="Exercício Comunicação Indireta" >
+      <Card titulo="Exercício de Componentes Controlados" color="#6659C1">
+        < Inputs />
+      </Card>
+      <Card titulo="Exercício de Estados do Componente" >
         < ComunicacaoIndireta />
       </Card>
       <Card titulo="Exercício Comunicação Direta" >
