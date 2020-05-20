@@ -23,32 +23,32 @@ export default _ => {
     <div className="App">
       <h1>Fundamentos React</h1>
     <div className="Cards">
-      <Card titulo="Desafio Mega" >
+      <Card titulo="Conceito #14: Mega Números" >
         < Mega />
       </Card>
-      <Card titulo="Desafio Contador" >
+      <Card titulo="Conceito #13: Contador" >
         < Contador numeroInicial={100}/>
       </Card>
-      <Card titulo="Exercício de Componentes Controlados" color="#6659C1">
+      <Card titulo="Conceito #12: Componentes Controlados" color="#6659C1">
         < Inputs />
       </Card>
-      <Card titulo="Exercício de Estados do Componente" >
+      <Card titulo="Conceito #11: Estados do Componente" >
         < ComunicacaoIndireta />
       </Card>
-      <Card titulo="Exercício Comunicação Direta" >
+      <Card titulo="Conceito #10: Comunicação Direta" >
         < ComunicacaoDireta />
       </Card>
-      <Card titulo="Exercício Renderização Condicional" color="#6659C1">
+      <Card titulo="Conceito #9: Renderização Condicional" color="#6659C1">
         < ParOuImpar numero={20} />
         < UsuarioInfo usuario={{ nome: 'Fernando', sobrenome: 'de Souza' }} />
       </Card>
-      <Card titulo="Exercício Repetição 2" color="#6659C1">
+      <Card titulo="Conceito #8: Repetição 2" color="#6659C1">
         < TabelaProduto />
       </Card>
-      <Card titulo="Exercício Repetição" >
+      <Card titulo="Conceito #7: Repetição" >
         < ListaAluno />
       </Card>
-      <Card titulo="Exercício Componentes com Filhos" >
+      <Card titulo="Conceito #6: Componentes com Filhos" >
         <Familia sobrenomeDaMae="Silva" sobrenomeDoPai="Souza">
           <FamiliaMembro filho="Arthur" filha="Maria"/>  
         </Familia>
@@ -57,19 +57,19 @@ export default _ => {
         </Familia>
       </Card>
       <p />
-      <Card titulo="Exercício Aleatório" >
+      <Card titulo="Conceito #5: Aleatório" >
         < Aleatorio min = { 1000 } max = { 2000 }/>
       </Card>
       <p />
-      <Card titulo="Exercício Tag">
+      <Card titulo="Conceito #3: Tag">
         { tag }
       </Card>
       <p />
-      <Card titulo="Exercício React Fragment" color="#6659C1">
+      <Card titulo="Conceito #3: React Fragment" color="#6659C1">
         <Fragmento />
       </Card>
       <p />
-      <Card titulo="Exercício Component Params" color="#6659C1">
+      <Card titulo="Conceito #2: Component Params" color="#6659C1">
       < SegundoComParametro 
         titulo = "Segundo Componente"
         subtitulo = "Com parâmetro"
@@ -77,7 +77,7 @@ export default _ => {
       />
       </Card>
       <p />
-      <Card titulo="Exercício Primeiro">
+      <Card titulo="Conceito #1: Components">
         < Primeiro />
       </Card>
 

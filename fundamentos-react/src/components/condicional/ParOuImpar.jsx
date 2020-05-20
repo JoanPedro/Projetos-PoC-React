@@ -1,15 +1,18 @@
-import React from 'react';
+import './ParOuImpar.css'
+import React, { useState } from 'react';
 
 export default (props) => {
-  const isPar = props.numero % 2 === 0;
+  const [isPar, setNum] = useState(props.numero % 2 === 0);
 
   return (
-    <div>
+    <div className="Par">
       {isPar ? 
         <span>Par</span> 
         : 
         <span>Impar</span>
-      }     
+      } 
+      <button onClick={e => setNum(!isPar)}> {isPar ? 'Impar' : 'Par'} </button>    
     </div>
+    
   )
 }

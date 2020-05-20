@@ -1,6 +1,6 @@
 import './Mega.css'
 import React, { useState } from 'react';
-import {gerarNumeroNaoContido,  gerarNumeros} from './gerarnumero';
+import { gerarNumeros } from './gerarnumero';
 
 export default (props) => {
 
