@@ -1,2 +1,2 @@
 # React
-Fundamentals. [PoCs] 
+Repository for basic projects, with proof of concept proofs. [PoC]. [PoCs] 
