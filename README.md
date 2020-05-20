@@ -1,5 +1,5 @@
 # React
-Repository for basic projects, with proof of concept proofs. [PoC]. [PoCs] 
+Repositório para Projetos Básicos e Provas de Conceitos. [PoCs]
 
 # Fundamentos do React -> Parte #1
 - Conceitos Testados:
