@@ -14,6 +14,8 @@ import UsuarioInfo from './components/condicional/UsarioInfo';
 import ComunicacaoDireta from './components/comunicacao/DiretaPai';
 import ComunicacaoIndireta from './components/comunicacao/IndiretaPai.jsx';
 import Inputs from './components/formulario/Input';
+import Contador from './components/contador/Contador';
+import Mega from './components/megasena/Mega';
 
 export default _ => {
   const tag = <strong>Olá React!!!</strong>;
@@ -21,6 +23,12 @@ export default _ => {
     <div className="App">
       <h1>Fundamentos React</h1>
     <div className="Cards">
+      <Card titulo="Desafio Mega" >
+        < Mega />
+      </Card>
+      <Card titulo="Desafio Contador" >
+        < Contador numeroInicial={100}/>
+      </Card>
       <Card titulo="Exercício de Componentes Controlados" color="#6659C1">
         < Inputs />
       </Card>
