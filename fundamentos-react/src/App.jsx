@@ -11,14 +11,21 @@ import ListaAluno from './components/repeticao/ListaAluno';
 import TabelaProduto from './components/repeticao/TabelaProdutos';
 import ParOuImpar from './components/condicional/ParOuImpar';
 import UsuarioInfo from './components/condicional/UsarioInfo';
-
+import ComunicacaoDireta from './components/comunicacao/DiretaPai';
+import ComunicacaoIndireta from './components/comunicacao/IndiretaPai.jsx';
 export default _ => {
   const tag = <strong>Olá React!!!</strong>;
   return (
     <div className="App">
       <h1>Fundamentos React</h1>
     <div className="Cards">
-    <Card titulo="Exercício Renderização Condicional" color="#6659C1">
+    <Card titulo="Exercício Comunicação Indireta" >
+        < ComunicacaoIndireta />
+      </Card>
+      <Card titulo="Exercício Comunicação Direta" >
+        < ComunicacaoDireta />
+      </Card>
+      <Card titulo="Exercício Renderização Condicional" color="#6659C1">
         < ParOuImpar numero={20} />
         < UsuarioInfo usuario={{ nome: 'Fernando', sobrenome: 'de Souza' }} />
       </Card>
