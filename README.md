@@ -1,8 +1,14 @@
 # React
 Repositório para Projetos Básicos e Provas de Conceitos. [PoCs]
 
-# Fundamentos do React -> Parte #1
+# Projetos Básicos -> Parte #1
 - Conceitos Testados:
+
+# Calculadora:
+
+![](.github/calc.gif)
+
+# Fundamentos do React:
 
 ![](.github/E1314.gif)
 
